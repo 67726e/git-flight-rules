@@ -24,50 +24,50 @@ For clarity's sake all examples in this document use a customized bash prompt in
 
   - [Editing Commits](#editing-commits)
     - [What did I just commit?](#what-did-i-just-commit)
-    - [I wrote the wrong thing in a commit message](#i-wrote-the-wrong-thing-in-a-commit-message)
-    - [I committed with the wrong name and email configured](#i-committed-with-the-wrong-name-and-email-configured)
-    - [I want to remove a file from the previous commit](#i-want-to-remove-a-file-from-the-previous-commit)
-    - [I want to delete or remove my last commit](#i-want-to-delete-or-remove-my-last-commit)
+    - [Oh shit, I wrote the wrong thing in a commit message](#i-wrote-the-wrong-thing-in-a-commit-message)
+    - [Oh shit, I committed with the wrong name and email configured](#i-committed-with-the-wrong-name-and-email-configured)
+    - [Oh shit, I want to remove a file from the previous commit](#i-want-to-remove-a-file-from-the-previous-commit)
+    - [Oh shit, I want to delete or remove my last commit](#i-want-to-delete-or-remove-my-last-commit)
     - [Delete/remove arbitrary commit](#deleteremove-arbitrary-commit)
-    - [I tried to push my amended commit to a remote, but I got an error message](#i-tried-to-push-my-amended-commit-to-a-remote-but-i-got-an-error-message)
-    - [I accidentally did a hard reset, and I want my changes back](#i-accidentally-did-a-hard-reset-and-i-want-my-changes-back)
+    - [Oh shit, I tried to push my amended commit to a remote, but I got an error message](#i-tried-to-push-my-amended-commit-to-a-remote-but-i-got-an-error-message)
+    - [Oh shit, I accidentally did a hard reset, and I want my changes back](#i-accidentally-did-a-hard-reset-and-i-want-my-changes-back)
   - [Staging](#staging)
-    - [I need to add staged changes to the previous commit](#i-need-to-add-staged-changes-to-the-previous-commit)
-    - [I want to stage part of a new file, but not the whole file](#i-want-to-stage-part-of-a-new-file-but-not-the-whole-file)
-    - [I want to add changes in one file to two different commits](#i-want-to-add-changes-in-one-file-to-two-different-commits)
-    - [I want to stage my unstaged edits, and unstage my staged edits](#i-want-to-stage-my-unstaged-edits-and-unstage-my-staged-edits)
+    - [Oh shit, I need to add staged changes to the previous commit](#i-need-to-add-staged-changes-to-the-previous-commit)
+    - [Oh shit, I want to stage part of a new file, but not the whole file](#i-want-to-stage-part-of-a-new-file-but-not-the-whole-file)
+    - [Oh shit, I want to add changes in one file to two different commits](#i-want-to-add-changes-in-one-file-to-two-different-commits)
+    - [Oh shit, I want to stage my unstaged edits, and unstage my staged edits](#i-want-to-stage-my-unstaged-edits-and-unstage-my-staged-edits)
   - [Unstaged Edits](#unstaged-edits)
-    - [I want to move my unstaged edits to a new branch](#i-want-to-move-my-unstaged-edits-to-a-new-branch)
-    - [I want to move my unstaged edits to a different, existing branch](#i-want-to-move-my-unstaged-edits-to-a-different-existing-branch)
-    - [I want to discard my local uncommitted changes (staged and unstaged)](#i-want-to-discard-my-local-uncommitted-changes-staged-and-unstaged)
-    - [I want to discard specific unstaged changes](#i-want-to-discard-specific-unstaged-changes)
-    - [I want to discard specific unstaged files](#i-want-to-discard-specific-unstaged-files)
-    - [I want to discard only my unstaged local changes](#i-want-to-discard-only-my-unstaged-local-changes)
-    - [I want to discard all of my untracked files](#i-want-to-discard-all-of-my-untracked-files)
+    - [Oh shit, I want to move my unstaged edits to a new branch](#i-want-to-move-my-unstaged-edits-to-a-new-branch)
+    - [Oh shit, I want to move my unstaged edits to a different, existing branch](#i-want-to-move-my-unstaged-edits-to-a-different-existing-branch)
+    - [Oh shit, I want to discard my local uncommitted changes (staged and unstaged)](#i-want-to-discard-my-local-uncommitted-changes-staged-and-unstaged)
+    - [Oh shit, I want to discard specific unstaged changes](#i-want-to-discard-specific-unstaged-changes)
+    - [Oh shit, I want to discard specific unstaged files](#i-want-to-discard-specific-unstaged-files)
+    - [Oh shit, I want to discard only my unstaged local changes](#i-want-to-discard-only-my-unstaged-local-changes)
+    - [Oh shit, I want to discard all of my untracked files](#i-want-to-discard-all-of-my-untracked-files)
   - [Branches](#branches)
-    - [I want to list all branches](#i-want-to-list-all-branches)
+    - [Oh shit, I want to list all branches](#i-want-to-list-all-branches)
     - [Create a branch from a commit](#create-a-branch-from-a-commit)
-    - [I pulled from/into the wrong branch](#i-pulled-frominto-the-wrong-branch)
-    - [I want to discard local commits so my branch is the same as one on the server](#i-want-to-discard-local-commits-so-my-branch-is-the-same-as-one-on-the-server)
-    - [I committed to master instead of a new branch](#i-committed-to-master-instead-of-a-new-branch)
-    - [I want to keep the whole file from another ref-ish](#i-want-to-keep-the-whole-file-from-another-ref-ish)
-    - [I made several commits on a single branch that should be on different branches](#i-made-several-commits-on-a-single-branch-that-should-be-on-different-branches)
+    - [Oh shit, I pulled from/into the wrong branch](#i-pulled-frominto-the-wrong-branch)
+    - [Oh shit, I want to discard local commits so my branch is the same as one on the server](#i-want-to-discard-local-commits-so-my-branch-is-the-same-as-one-on-the-server)
+    - [Oh shit, I committed to master instead of a new branch](#i-committed-to-master-instead-of-a-new-branch)
+    - [Oh shit, I want to keep the whole file from another ref-ish](#i-want-to-keep-the-whole-file-from-another-ref-ish)
+    - [Oh shit, I made several commits on a single branch that should be on different branches](#i-made-several-commits-on-a-single-branch-that-should-be-on-different-branches)
     - [I want to delete local branches that were deleted upstream](#i-want-to-delete-local-branches-that-were-deleted-upstream)
-    - [I accidentally deleted my branch](#i-accidentally-deleted-my-branch)
-    - [I want to delete a branch](#i-want-to-delete-a-branch)
-    - [I want to rename a branch](#i-want-to-rename-a-branch)
-    - [I want to checkout to a remote branch that someone else is working on](#i-want-to-checkout-to-a-remote-branch-that-someone-else-is-working-on)
-    - [I want to create a new remote branch from current local one](#i-want-to-create-a-new-remote-branch-from-current-local-one)
-    - [I want to set a remote branch as the upstream for a local branch](#i-want-to-set-a-remote-branch-as-the-upstream-for-a-local-branch)
-    - [I want to set my HEAD to track the default remote branch](#i-want-to-set-my-head-to-track-the-default-remote-branch)
+    - [Oh shit, I accidentally deleted my branch](#i-accidentally-deleted-my-branch)
+    - [Oh shit, I want to delete a branch](#i-want-to-delete-a-branch)
+    - [Oh shit, I want to rename a branch](#i-want-to-rename-a-branch)
+    - [Oh shit, I want to checkout to a remote branch that someone else is working on](#i-want-to-checkout-to-a-remote-branch-that-someone-else-is-working-on)
+    - [Oh shit, I want to create a new remote branch from current local one](#i-want-to-create-a-new-remote-branch-from-current-local-one)
+    - [Oh shit, I want to set a remote branch as the upstream for a local branch](#i-want-to-set-a-remote-branch-as-the-upstream-for-a-local-branch)
+    - [Oh shit, I want to set my HEAD to track the default remote branch](#i-want-to-set-my-head-to-track-the-default-remote-branch)
   - [Rebasing and Merging](#rebasing-and-merging)
-    - [I want to undo rebase/merge](#i-want-to-undo-rebasemerge)
-    - [I rebased, but I don't want to force push](#i-rebased-but-i-dont-want-to-force-push)
-    - [I need to combine commits](#i-need-to-combine-commits)
+    - [Oh shit, I want to undo rebase/merge](#i-want-to-undo-rebasemerge)
+    - [Oh shit, I rebased, but I don't want to force push](#i-rebased-but-i-dont-want-to-force-push)
+    - [Oh shit, I need to combine commits](#i-need-to-combine-commits)
       - [Safe merging strategy](#safe-merging-strategy)
-      - [I need to merge a branch into a single commit](#i-need-to-merge-a-branch-into-a-single-commit)
-      - [I want to combine only unpushed commits](#i-want-to-combine-only-unpushed-commits)
-      - [I need to abort the merge](#i-need-to-abort-the-merge)
+      - [Oh shit, I need to merge a branch into a single commit](#i-need-to-merge-a-branch-into-a-single-commit)
+      - [Oh shit, I want to combine only unpushed commits](#i-want-to-combine-only-unpushed-commits)
+      - [Oh shit, I need to abort the merge](#i-need-to-abort-the-merge)
     - [Check if all commits on a branch are merged](#check-if-all-commits-on-a-branch-are-merged)
     - [Possible issues with interactive rebases](#possible-issues-with-interactive-rebases)
       - [The rebase editing screen says 'noop'](#the-rebase-editing-screen-says-noop)
@@ -78,8 +78,8 @@ For clarity's sake all examples in this document use a customized bash prompt in
     - [Stash with message](#stash-with-message)
     - [Apply a specific stash from list](#apply-a-specific-stash-from-list)
   - [Finding](#finding)
-    - [I want to find a string in any commit](#i-want-to-find-a-string-in-any-commit)
-    - [I want to find by author/committer](#i-want-to-find-by-authorcommitter)
+    - [Oh shit, I want to find a string in any commit](#i-want-to-find-a-string-in-any-commit)
+    - [Oh shit, I want to find by author/committer](#i-want-to-find-by-authorcommitter)
   - [Miscellaneous Objects](#miscellaneous-objects)
     - [Clone all submodules](#clone-all-submodules)
     - [Remove a submodule](#remove-a-submodule)
@@ -87,16 +87,16 @@ For clarity's sake all examples in this document use a customized bash prompt in
     - [Recover a deleted tag](#recover-a-deleted-tag)
     - [Deleted Patch](#deleted-patch)
   - [Tracking Files](#tracking-files)
-    - [I want to change a file name's capitalization, without changing the contents of the file](#i-want-to-change-a-file-names-capitalization-without-changing-the-contents-of-the-file)
-    - [I want to overwrite local files when doing a git pull](#i-want-to-overwrite-local-files-when-doing-a-git-pull)
-    - [I want to remove a file from Git but keep the file](#i-want-to-remove-a-file-from-git-but-keep-the-file)
-    - [I want to revert a file to a specific revision](#i-want-to-revert-a-file-to-a-specific-revision)
+    - [Oh shit, I want to change a file name's capitalization, without changing the contents of the file](#i-want-to-change-a-file-names-capitalization-without-changing-the-contents-of-the-file)
+    - [Oh shit, I want to overwrite local files when doing a git pull](#i-want-to-overwrite-local-files-when-doing-a-git-pull)
+    - [Oh shit, I want to remove a file from Git but keep the file](#i-want-to-remove-a-file-from-git-but-keep-the-file)
+    - [Oh shit, I want to revert a file to a specific revision](#i-want-to-revert-a-file-to-a-specific-revision)
   - [Configuration](#configuration)
-    - [I want to add aliases for some Git commands](#i-want-to-add-aliases-for-some-git-commands)
-    - [I want to add an empty directory to my repository](#i-want-to-add-an-empty-directory-to-my-repository)
-    - [I want to cache a username and password for a repository](#i-want-to-cache-a-username-and-password-for-a-repository)
-    - [I want to make Git ignore permissions and filemode changes](#i-want-to-make-git-ignore-permissions-and-filemode-changes)
-  - [I've no idea what I did wrong](#ive-no-idea-what-i-did-wrong)
+    - [Oh shit, I want to add aliases for some Git commands](#i-want-to-add-aliases-for-some-git-commands)
+    - [Oh shit, I want to add an empty directory to my repository](#i-want-to-add-an-empty-directory-to-my-repository)
+    - [Oh shit, I want to cache a username and password for a repository](#i-want-to-cache-a-username-and-password-for-a-repository)
+    - [Oh shit, I want to make Git ignore permissions and filemode changes](#i-want-to-make-git-ignore-permissions-and-filemode-changes)
+  - [Oh shit, I've no idea what I did wrong](#ive-no-idea-what-i-did-wrong)
 - [Other Resources](#other-resources)
   - [Books](#books)
   - [Tutorials](#tutorials)
@@ -124,7 +124,7 @@ $ git log -n1 -p
 ```
 
 <a name="#i-wrote-the-wrong-thing-in-a-commit-message"></a>
-### I wrote the wrong thing in a commit message
+### Oh shit, I wrote the wrong thing in a commit message
 
 If you wrote the wrong thing and the commit has not yet been pushed, you can do the following to change the commit message:
 
@@ -140,7 +140,7 @@ $ git commit --amend -m 'xxxxxxx'
 If you have already pushed the message, you can amend the commit and force push, but this is not recommended.
 
 <a name="commit-wrong-author"></a>
-### I committed with the wrong name and email configured
+### Oh shit, I committed with the wrong name and email configured
 
 If it's a single commit, amend it
 
@@ -158,7 +158,7 @@ If you need to change all of history, see the man page for `git filter-branch`.
 
 
 <a href="#i-want-to-remove-a-file-from-the-previous-commit"></a>
-### I want to remove a file from the previous commit
+### Oh shit, I want to remove a file from the previous commit
 
 In order to remove changes for a file from the previous commit, do the following:
 
@@ -178,7 +178,7 @@ $ git commit --amend --no-edit
 This is particularly useful when you have an open patch and you have committed an unnecessary file, and need to force push to update the patch on a remote. The `--no-edit` option is used to keep the existing commit message.
 
 <a name="delete-pushed-commit"></a>
-### I want to delete or remove my last commit
+### Oh shit, I want to delete or remove my last commit
 
 If you need to delete pushed commits, you can use the following. However, it will irreversibly change your history, and mess up the history of anyone else who had already pulled from the repository. In short, if you're not sure, you should never do this, ever.
 
@@ -209,7 +209,7 @@ $ git push --force-with-lease [remote] [branch]
 Or do an [interactive rebase](#interactive-rebase) and remove the line(s) corresponding to commit(s) you want to see removed.
 
 <a name="#force-push"></a>
-### I tried to push my amended commit to a remote, but I got an error message
+### Oh shit, I tried to push my amended commit to a remote, but I got an error message
 
 ```sh
 To https://github.com/yourusername/repo.git
@@ -232,7 +232,7 @@ In general, **avoid force pushing**. It is best to create and push a new commit 
 If you are *absolutely* sure that nobody is working on the same branch or you want to update the tip of the branch *unconditionally*, you can use `--force` (`-f`), but this should be avoided in general.
 
 <a href="undo-git-reset-hard"></a>
-### I accidentally did a hard reset, and I want my changes back
+### Oh shit, I accidentally did a hard reset, and I want my changes back
 
 If you accidentally do `git reset --hard`, you can normally still get your commit back, as git keeps a log of everything for a few days.
 
@@ -253,7 +253,7 @@ And you should be good to go.
 ## Staging
 
 <a href="#i-need-to-add-staged-changes-to-the-previous-commit"></a>
-### I need to add staged changes to the previous commit
+### Oh shit, I need to add staged changes to the previous commit
 
 ```sh
 (my-branch*)$ git commit --amend
@@ -261,7 +261,7 @@ And you should be good to go.
 ```
 
 <a name="commit-partial-new-file"></a>
-### I want to stage part of a new file, but not the whole file
+### Oh shit, I want to stage part of a new file, but not the whole file
 
 Normally, if you want to stage part of a file, you run this:
 
@@ -280,13 +280,13 @@ Then, you will need to use the `e` option to manually choose which lines to add.
 
 
 <a href="stage-in-two-commits"></a>
-### I want to add changes in one file to two different commits
+### Oh shit, I want to add changes in one file to two different commits
 
 `git add` will add the entire file to a commit. `git add -p` will allow to interactively select which changes you want to add.
 
 
 <a href="unstaging-edits-and-staging-the-unstaged"></a>
-### I want to stage my unstaged edits, and unstage my staged edits
+### Oh shit, I want to stage my unstaged edits, and unstage my staged edits
 
 This is tricky. The best I figure is that you should stash your unstaged edits. Then, reset. After that, pop your stashed edits back, and add them.
 
@@ -300,14 +300,14 @@ $ git add -A
 ## Unstaged Edits
 
 <a href="move-unstaged-edits-to-new-branch"></a>
-### I want to move my unstaged edits to a new branch
+### Oh shit, I want to move my unstaged edits to a new branch
 
 ```sh
 $ git checkout -b my-branch
 ```
 
 <a href="move-unstaged-edits-to-old-branch"></a>
-### I want to move my unstaged edits to a different, existing branch
+### Oh shit, I want to move my unstaged edits to a different, existing branch
 
 ```sh
 $ git stash
@@ -316,7 +316,7 @@ $ git stash pop
 ```
 
 <a href="i-want-to-discard-my-local-uncommitted-changes"></a>
-### I want to discard my local uncommitted changes (staged and unstaged)
+### Oh shit, I want to discard my local uncommitted changes (staged and unstaged)
 
 If you want to discard all your local staged and unstaged changes, you can do this:
 
@@ -359,7 +359,7 @@ $ git clean -fdx
 WARNING: -x will also remove all ignored files!
 
 <a href="i-want-to-discard-specific-unstaged-changes"></a>
-### I want to discard specific unstaged changes
+### Oh shit, I want to discard specific unstaged changes
 
 When you want to get rid of some, but not all changes in your working copy.
 
@@ -388,7 +388,7 @@ $ git stash drop
 ```
 
 <a href="i-want-to-discard-specific-unstaged-files"></a>
-### I want to discard specific unstaged files
+### Oh shit, I want to discard specific unstaged files
 
 When you want to get rid of one specific file in your working copy.
 
@@ -403,7 +403,7 @@ $ git checkout myFirstFile mySecondFile
 ```
 
 <a href="i-want-to-discard-only-my-unstaged-local-changes"></a>
-### I want to discard only my unstaged local changes
+### Oh shit, I want to discard only my unstaged local changes
 
 When you want to get rid of all of your unstaged local uncommitted changes
 
@@ -421,7 +421,7 @@ $ git clean -f
 
 ## Branches
 <a name="i-want-to-list-all-branches"></a>
-### I want to list all branches
+### Oh shit, I want to list all branches
 
 List local branches
 
@@ -449,7 +449,7 @@ $ git checkout -b <branch> <SHA1_OF_COMMIT>
 
 
 <a name="pull-wrong-branch"></a>
-### I pulled from/into the wrong branch
+### Oh shit, I pulled from/into the wrong branch
 
 This is another chance to use `git reflog` to see where your HEAD pointed before the bad pull.
 
@@ -468,7 +468,7 @@ $ git reset --hard c5bc55a
 Done.
 
 <a href="discard-local-commits"></a>
-### I want to discard local commits so my branch is the same as one on the server
+### Oh shit, I want to discard local commits so my branch is the same as one on the server
 
 Confirm that you haven't pushed your changes to the server.
 
@@ -489,7 +489,7 @@ One way of resetting to match origin (to have the same as what is on the remote)
 ```
 
 <a name="commit-wrong-branch"></a>
-### I committed to master instead of a new branch
+### Oh shit, I committed to master instead of a new branch
 
 Create the new branch while remaining on master:
 
@@ -523,7 +523,7 @@ Checkout the new branch to continue working:
 ```
 
 <a name="keep-whole-file"></a>
-### I want to keep the whole file from another ref-ish
+### Oh shit, I want to keep the whole file from another ref-ish
 
 Say you have a working spike (see note), with hundreds of changes. Everything is working. Now, you commit into another branch to save that work:
 
@@ -560,7 +560,7 @@ Then, commit as usual.
 Note: Spike solutions are made to analyze or solve the problem. These solutions are used for estimation and discarded once everyone gets clear visualization of the problem. ~ [Wikipedia](https://en.wikipedia.org/wiki/Extreme_programming_practices).
 
 <a name="cherry-pick"></a>
-### I made several commits on a single branch that should be on different branches
+### Oh shit, I made several commits on a single branch that should be on different branches
 
 Say you are on your master branch. Running `git log`, you see you have made two commits:
 
@@ -627,7 +627,7 @@ And finally, let's cherry-pick the commit for bug #14:
 
 
 <a name="delete-stale-local-branches"></a>
-### I want to delete local branches that were deleted upstream
+### Oh shit, I want to delete local branches that were deleted upstream
 Once you merge a pull request on GitHub, it gives you the option to delete the merged branch in your fork. If you aren't planning to keep working on the branch, it's cleaner to delete the local copies of the branch so you don't end up cluttering up your working checkout with a lot of stale branches.
 
 ```sh
@@ -637,7 +637,7 @@ $ git fetch -p upstream
 where, `upstream` is the remote you want to fetch from.
 
 <a name='restore-a-deleted-branch'></a>
-### I accidentally deleted my branch
+### Oh shit, I accidentally deleted my branch
 
 If you're regularly pushing to remote, you should be safe most of the time. But still sometimes you may end up deleting your branches. Let's say we create a branch and create a new file:
 
@@ -707,7 +707,7 @@ README.md foo.txt
 Voila! We got our removed file back. `git reflog` is also useful when rebasing goes terribly wrong.
 
 <a name="i-want-to-delete-a-branch"></a>
-### I want to delete a branch
+### Oh shit, I want to delete a branch
 
 To delete a remote branch:
 
@@ -734,7 +734,7 @@ To delete a local branch that *has not* been merged to the current branch or an 
 ```
 
 <a name="i-want-to-rename-a-branch"></a>
-### I want to rename a branch
+### Oh shit, I want to rename a branch
 
 To rename the current (local) branch:
 
@@ -749,7 +749,7 @@ To rename a different (local) branch:
 ```
 
 <a name="i-want-to-checkout-to-a-remote-branch-that-someone-else-is-working-on"></a>
-### I want to checkout to a remote branch that someone else is working on
+### Oh shit, I want to checkout to a remote branch that someone else is working on
 
 First, fetch all branches from remote:
 
@@ -770,7 +770,7 @@ Switched to a new branch 'daves'
 This will give you a local copy of the branch `daves`, and any update that has been pushed will also show up remotely.
 
 <a name="i-want-to-create-a-new-remote-branch-from-current-local-one"></a>
-### I want to create a new remote branch from current local one
+### Oh shit, I want to create a new remote branch from current local one
 
 ```sh
 $ git push <remote>
@@ -791,7 +791,7 @@ $ git push
 The behavior of the other modes of ```git push``` is described in the doc of push.default.
 
 <a name="i-want-to-set-a-remote-branch-as-the-upstream-for-a-local-branch"></a>
-### I want to set a remote branch as the upstream for a local branch
+### Oh shit, I want to set a remote branch as the upstream for a local branch
 
 You can set a remote branch as the upstream for the current local branch using:
 
@@ -808,7 +808,7 @@ $ git branch -u [remotename]/[branch] [local-branch]
 ```
 
 <a name="i-want-to-set-my-HEAD-to-track-the-default-remote-branch"></a>
-### I want to set my HEAD to track the default remote branch
+### Oh shit, I want to set my HEAD to track the default remote branch
 
 By checking your remote branches, you can see which remote branch your HEAD is tracking. In some cases, this is not the desired branch.
 
@@ -828,7 +828,7 @@ origin/HEAD set to master
 ## Rebasing and Merging
 
 <a name="undo-rebase"></a>
-### I want to undo rebase/merge
+### Oh shit, I want to undo rebase/merge
 
 You may have merged or rebased your current branch with a wrong branch, or you can't figure it out or finish the rebase/merge process. Git saves the original HEAD pointer in a variable called ORIG_HEAD before doing dangerous operations, so it is simple to recover your branch at the state before the rebase/merge.
 
@@ -837,7 +837,7 @@ You may have merged or rebased your current branch with a wrong branch, or you c
 ```
 
 <a name="force-push-rebase"></a>
-### I rebased, but I don't want to force push
+### Oh shit, I rebased, but I don't want to force push
 
 Unfortunately, you have to force push, if you want those changes to be reflected on the remote branch. This is because you have changed the history. The remote branch won't accept changes unless you force push. This is one of the main reasons many people use a merge workflow, instead of a rebasing workflow - large teams can get into trouble with developers force pushing. Use this with caution. A safer way to use rebase is not to reflect your changes on the remote branch at all, and instead to do the following:
 
@@ -851,7 +851,7 @@ Unfortunately, you have to force push, if you want those changes to be reflected
 For more, see [this SO thread](https://stackoverflow.com/questions/11058312/how-can-i-use-git-rebase-without-requiring-a-forced-push).
 
 <a name="interactive-rebase"></a>
-### I need to combine commits
+### Oh shit, I need to combine commits
 
 Let's suppose you are working in a branch that is/will become a pull-request against `master`. In the simplest case when all you want to do is to combine *all* commits into a single one and you don't care about commit timestamps, you can reset and recommit. Make sure the master branch is up to date and all your changes committed, then:
 
@@ -950,14 +950,14 @@ If everything is successful, you should see something like this:
 (master)$ git merge --no-ff --no-commit my-branch
 ```
 
-#### I need to merge a branch into a single commit
+#### Oh shit, I need to merge a branch into a single commit
 
 ```sh
 (master)$ git merge --squash my-branch
 ```
 
 <a name="rebase-unpushed-commits"></a>
-#### I want to combine only unpushed commits
+#### Oh shit, I want to combine only unpushed commits
 
 Sometimes you have several work in progress commits that you want to combine before you push them upstream. You don't want to accidentally combine any commits that have already been pushed upstream because someone else may have already made commits that reference them.
 
@@ -968,7 +968,7 @@ Sometimes you have several work in progress commits that you want to combine bef
 This will do an interactive rebase that lists only the commits that you haven't already pushed, so it will be safe to reorder/fix/squash anything in the list.
 
 <a name="i-need-to-abort-the-merge"></a>
-#### I need to abort the merge
+#### Oh shit, I need to abort the merge
 
 Sometimes the merge can produce problems in certain files, in those cases we can use the option `abort` to abort the current conflict resolution process, and try to reconstruct the pre-merge state.
 
@@ -1128,7 +1128,7 @@ Here, 'n' indicates the position of the stash in the stack. The topmost stash wi
 ## Finding
 
 <a name="i-want-to-find-a-string-in-any-commit"></a>
-### I want to find a string in any commit
+### Oh shit, I want to find a string in any commit
 
 To find a certain string which was introduced in any commit, you can use the following structure:
 
@@ -1145,7 +1145,7 @@ Commons parameters:
 * `--reverse` prints in reverse order, it means that will show the first commit that made the change.
 
 <a name="i-want-to-find-by-author-committer"></a>
-### I want to find by author/committer
+### Oh shit, I want to find by author/committer
 
 To find all commits by author/committer you can use:
 
@@ -1223,14 +1223,14 @@ From github.com:foo/bar
 ## Tracking Files
 
 <a href="i-want-to-change-a-file-names-capitalization-without-changing-the-contents-of-the-file"></a>
-### I want to change a file name's capitalization, without changing the contents of the file
+### Oh shit, I want to change a file name's capitalization, without changing the contents of the file
 
 ```sh
 (master)$ git mv --force myfile MyFile
 ```
 
 <a href="i-want-to-overwrite-local-files-when-doing-a-git-pull"></a>
-### I want to overwrite local files when doing a git pull
+### Oh shit, I want to overwrite local files when doing a git pull
 
 ```sh
 (master)$ git fetch --all
@@ -1238,14 +1238,14 @@ From github.com:foo/bar
 ```
 
 <a href="remove-from-git"></a>
-### I want to remove a file from Git but keep the file
+### Oh shit, I want to remove a file from Git but keep the file
 
 ```sh
 (master)$ git rm --cached log.txt
 ```
 
 <a href="i-want-to-revert-a-file-to-a-specific-revision"></a>
-### I want to revert a file to a specific revision
+### Oh shit, I want to revert a file to a specific revision
 
 Assuming the hash of the commit you want is c5f567:
 
@@ -1262,7 +1262,7 @@ If you want to revert to changes made just 1 commit before c5f567, pass the comm
 ## Configuration
 
 <a name="adding-command-aliases"></a>
-### I want to add aliases for some Git commands
+### Oh shit, I want to add aliases for some Git commands
 
 On OS X and Linux, your git configuration file is stored in ```~/.gitconfig```.  I've added some example aliases I use as shortcuts (and some of my common typos) in the ```[alias]``` section as shown below:
 
@@ -1290,7 +1290,7 @@ On OS X and Linux, your git configuration file is stored in ```~/.gitconfig```. 
 ```
 
 <a name="adding-empty-repository"></a>
-### I want to add an empty directory to my repository
+### Oh shit, I want to add an empty directory to my repository
 
 You can’t! Git doesn’t support this, but there’s a hack. You can create a .gitignore file in the directory with the following contents:
 
@@ -1311,7 +1311,7 @@ $ touch mydir/.gitkeep
 You can also name the file as just .keep , in which case the second line above would be ```touch mydir/.keep```
 
 <a name="credential-helper"></a>
-### I want to cache a username and password for a repository
+### Oh shit, I want to cache a username and password for a repository
 
 You might have a repository that requires authentication.  In which case you can cache a username and password so you don't have to enter it on every push / pull. Credential helper can do this for you.
 
@@ -1326,7 +1326,7 @@ $ git config --global credential.helper 'cache --timeout=3600'
 ```
 
 <a name="i-want-to-make-git-ignore-permissions-and-filemode-changes"></a>
-### I want to make Git ignore permissions and filemode changes
+### Oh shit, I want to make Git ignore permissions and filemode changes
 
 ```sh
 $ git config core.fileMode false
@@ -1339,7 +1339,7 @@ $ git config --global core.fileMode false
 ```
 
 <a href="#ive-no-idea-what-i-did-wrong"></a>
-## I've no idea what I did wrong
+## Oh shit, I've no idea what I did wrong
 
 So, you're screwed - you `reset` something, or you merged the wrong branch, or you force pushed and now you can't find your commits. You know, at some point, you were doing alright, and you want to go back to some state you were at.
 
